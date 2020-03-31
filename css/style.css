@@ -9,7 +9,7 @@ body{
     margin: 0 auto;
     position: relative;
 }
-.centre{
+.center{
     text-align: center;
 }
 .navigation{
@@ -59,7 +59,7 @@ body{
     background-size: cover;
     background-position: center center;
     color: #fff;
-    padding-top: 84px;
+    padding-top: 235px;
     padding-bottom: 285px;
 }
 .pizza{
@@ -79,7 +79,7 @@ body{
     font-family: 'Roboto', sans-serif;
     margin-bottom: 24px;
     margin-top: 0;
-    margin-bottom: 24px;
+    
 }
 .btn{
     display: block;
@@ -101,8 +101,7 @@ body{
     text-align: center;
     position: relative;
     display: inline-block;
-    padding-right: 127px;
-    padding-left: 127px;
+    
     margin-bottom: 11px;
 }
 .h2::before, .h2::after{
@@ -115,10 +114,10 @@ body{
     top: 14px;
 }
 .h2::before{
-    left: 0;
+    left: -127px;
 }
 .h2::after{
-    right: 0;
+    right: -127px;
 }
 .h2 + p{
     color: #959595;
@@ -207,21 +206,21 @@ body{
     background-image: url(../image/pizza1.png);
     width: 126px;
     height: 71px;
-    left: 69px;
+    left: 105px;
     top: calc(50% - 35px);
 }
 .number-two::after {
     background-image: url(../image/pizza2.png);
     width: 184px;
     height: 81px;
-    left: 88px;
+    left: 80px;
     top: calc(50% - 40px);
 }
 .number-three::after {
     background-image: url(../image/pizza3.png);
     width: 142px;
     height: 68px;
-    left: 94px;
+    left: 105px;
     top: calc(50% - 34px);
 }
 .box-text {
@@ -261,10 +260,12 @@ body{
 }
 .footer {
     background-image: url(../image/footer.png);
-    background-position: center;
-    max-width: 1820px;
-    max-height: 106px;
-    padding-top: 95px;
+    padding: 30px 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 @media (max-width: 1200px) {
     .wrapper {
@@ -286,6 +287,9 @@ body{
     .menu > li {
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .menu > li > a{
+        padding-bottom: 15px;
     }
     .box {
         flex-direction: column;
@@ -312,18 +316,111 @@ body{
     }
     .nav {
         margin-top: 34px;
+        margin-bottom: 15px;
     }
     .h2::before, .h2::after {
         display: none;
+    }
+    .menu > li > a{
+        padding-bottom: 12px;
     }
     .btn-start {
         font-size: 20px;
         background-size: contain;
     }
-    .footer {
-        padding: 13px;
-    }
     .menu > li > a{
         font-size: 15px;
+    }
+    .footer {
+        padding: 25px 0;
+        font-size: 15px;
+    }
+}
+@media (max-width: 570px) {
+    .wrapper {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .nav {
+        font-size: 12px;
+    }
+    .title {
+        font-size: 45;
+    }
+    .discription {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 15px;
+    }
+    .menu > li > a{
+        font-size: 12px;   
+    }
+    .h2 {
+        font-size: 30px;
+    }
+    .number {
+        font-size: 100px;
+    }
+    .box-text h3 {
+        font-size: 37px;
+    }
+    .footer {
+        padding: 20px 0;
+        font-size: 10px;
+    }
+}
+@media (max-width: 498px) {
+    .nav {
+        font-size: 8px;
+    }
+    .title {
+        font-size: 33px;
+    }
+    .discription {
+        font-size: 15px;
+    }
+    .btn {
+        font-size: 12px;
+    }
+    .menu > li > a{
+        font-size: 8px;   
+    }
+    .h2 {
+        font-size: 25px;
+    }
+    .number {
+        font-size: 75px;
+    }
+    .number-one::after {
+        background-image: none;
+        background-image: url(../image/pizza1\ —\ копия.png);
+        width: 106px;
+        height: 60px;
+        left: 105px;
+    }
+    .number-two::after {
+        background-image: none;
+        background-image: url(../image/pizza2\ —\ копия.png);
+        width: 154px;
+        height: 68px;
+        left: 80px;
+    }
+    .number-three::after {
+        background-image: none;
+        background-image: url(../image//pizza3\ —\ копия.png);
+        width: 122px;
+        height: 58px;
+        left: 105px;
+    }
+    .box-text h3 {
+        font-size: 25px;
+    }
+    .footer {
+        padding: 13px 0;
+        font-size: 7px;
+    }
+    .btn-start {
+        font-size: 13px;
     }
 }
