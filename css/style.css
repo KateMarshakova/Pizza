@@ -342,7 +342,11 @@ body{
         padding-right: 5px;
     }
     .nav {
-        font-size: 12px;
+        font-size: 15px;
+    }
+    .nav >li {
+        padding-left: 17px;
+        margin-left: 12px;
     }
     .title {
         font-size: 45;
@@ -353,8 +357,12 @@ body{
     .btn {
         font-size: 15px;
     }
+    .menu > li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .menu > li > a{
-        font-size: 12px;   
+        font-size: 15px;   
     }
     .h2 {
         font-size: 30px;
@@ -372,7 +380,11 @@ body{
 }
 @media (max-width: 498px) {
     .nav {
-        font-size: 8px;
+        font-size: 12px;
+    }
+    .nav >li {
+        padding-left: 12px;
+        margin-left: 7px;
     }
     .title {
         font-size: 33px;
@@ -384,7 +396,11 @@ body{
         font-size: 12px;
     }
     .menu > li > a{
-        font-size: 8px;   
+        font-size: 11px;   
+    }
+    .menu > li {
+        padding-left: 7px;
+        padding-right: 7px;
     }
     .h2 {
         font-size: 25px;
