@@ -18,6 +18,7 @@ body{
     justify-content: space-between;
     padding-top: 36px;
     padding-bottom: 23px;
+    
 }
 .wrapper-burger{
     display: none;
@@ -28,8 +29,6 @@ body{
     color: #EAEAEA;
     text-align: center;
     height: 40px;
-    position: fixed;
-    top:109px;
     z-index: 1;
 }
 #check-menu {
@@ -99,7 +98,6 @@ label {
     border-top: 1px solid #959595;
     background-color: #494949;
 }
-
 .nav{
     display: flex;
     list-style-type: none;
@@ -524,6 +522,7 @@ label {
 @media (max-width: 385px){
     .navigation{
         padding-bottom: 0px;
+        padding-top: 15px;
     }
     .nav{
         display: none;
