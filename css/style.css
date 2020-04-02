@@ -520,7 +520,7 @@ label {
         font-size: 13px;
     }
 }
-@media (max-width: 385px){
+@media (max-width: 390px){
     .navigation{
         padding-bottom: 0px;
         padding-top: 15px;
