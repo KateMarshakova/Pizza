@@ -19,6 +19,87 @@ body{
     padding-top: 36px;
     padding-bottom: 23px;
 }
+.wrapper-burger{
+    display: none;
+    width: 100vw;
+    /*при уменьшении экрана, уменьшаетя ширина с помощью vw */
+    background-color: #494949;
+    position: relative;
+    color: #EAEAEA;
+    text-align: center;
+    height: 40px;
+    position: fixed;
+    top:109px;
+    z-index: 1;
+}
+#check-menu {
+    display: none;
+}
+#check-menu:checked ~ .main-menu{
+    max-height: 500px;
+    font-size: 16px;
+}
+#check-menu:checked ~ .first{
+    display: none;
+}
+#check-menu:checked ~ .second{
+    transform: rotate(35deg);
+}
+#check-menu:checked ~ .third{
+    transform: rotate(-35deg);
+}
+#check-menu:checked ~ .fourth{
+    display: none;
+}
+label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    line-height: 40px;
+    font-size: 22px;
+    color: #ee252d;
+}
+.burger-line {
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    transition: .4s all;
+}
+.second, .third{
+    top: 18px;
+}
+.fourth{
+    top: 28px;
+}
+.main-menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left:0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: .4s all;
+}
+.a-chech{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    border-top: 1px solid #959595;
+    background-color: #494949;
+}
+
 .nav{
     display: flex;
     list-style-type: none;
@@ -438,5 +519,16 @@ body{
     }
     .btn-start {
         font-size: 13px;
+    }
+}
+@media (max-width: 385px){
+    .navigation{
+        padding-bottom: 0px;
+    }
+    .nav{
+        display: none;
+    }
+    .wrapper-burger{
+        display: flex;
     }
 }
