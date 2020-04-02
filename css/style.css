@@ -26,9 +26,9 @@ body{
     /*при уменьшении экрана, уменьшаетя ширина с помощью vw */
     background-color: #494949;
     position: relative;
-    color: #EAEAEA;
+    color: #959595;
     text-align: center;
-    height: 40px;
+    height: 60px;
     z-index: 1;
 }
 #check-menu {
@@ -42,10 +42,10 @@ body{
     display: none;
 }
 #check-menu:checked ~ .second{
-    transform: rotate(35deg);
+    transform: rotate(45deg);
 }
 #check-menu:checked ~ .third{
-    transform: rotate(-35deg);
+    transform: rotate(-45deg);
 }
 #check-menu:checked ~ .fourth{
     display: none;
@@ -58,24 +58,24 @@ label {
     width: 100%;
     height: 100%;
     z-index: 2;
-    line-height: 40px;
+    line-height: 60px;
     font-size: 22px;
-    color: #ee252d;
+    color: #fff;
 }
 .burger-line {
     position: absolute;
-    top: 8px;
-    right: 25px;
-    width: 35px;
+    top: 18px;
+    right: 30px;
+    width: 37px;
     height: 2px;
     background-color: #fff;
-    transition: .4s all;
+    transition: .2s all;
 }
 .second, .third{
-    top: 18px;
+    top: 28px;
 }
 .fourth{
-    top: 28px;
+    top: 38px;
 }
 .main-menu{
     display: block;
@@ -87,16 +87,17 @@ label {
     max-height: 0;
     font-size: 0;
     overflow: hidden;
-    transition: .4s all;
+    transition: .2s all;
 }
 .a-chech{
     display: block;
     width: 100%;
-    padding: 10px 0;
-    color: #fff;
+    padding: 16px 0;
+    color: #dddddd;
     text-decoration: none;
     border-top: 1px solid #959595;
     background-color: #494949;
+    font-size: 17px;
 }
 .nav{
     display: flex;
