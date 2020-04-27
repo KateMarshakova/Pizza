@@ -370,9 +370,6 @@ label {
     .menu > li > a{
         padding-bottom: 15px;
     }
-    .menu > li > a:active{
-        color: #ee252d;
-    }
     .menu > li > a.active {
         border-bottom: none;
     }
@@ -429,12 +426,15 @@ label {
         padding-left: 5px;
         padding-right: 5px;
     }
-    .nav {
-        font-size: 15px;
+    .navigation{
+        padding-bottom: 0px;
+        padding-top: 15px;
     }
-    .nav >li {
-        padding-left: 17px;
-        margin-left: 12px;
+    .nav{
+        display: none;
+    }
+    .wrapper-burger{
+        display: flex;
     }
     .title {
         font-size: 45;
@@ -450,6 +450,7 @@ label {
         overflow-y: hidden;
         justify-content: left;
         margin-right: 16px;
+        padding-bottom: 15px;
     }
     .menu > li > a{
         font-size: 15px;   
@@ -521,17 +522,5 @@ label {
     }
     .btn-start {
         font-size: 13px;
-    }
-}
-@media (max-width: 390px){
-    .navigation{
-        padding-bottom: 0px;
-        padding-top: 15px;
-    }
-    .nav{
-        display: none;
-    }
-    .wrapper-burger{
-        display: flex;
     }
 }
