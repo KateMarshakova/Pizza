@@ -236,12 +236,11 @@ label {
     text-transform: uppercase;
     padding-bottom: 18px;
 }
-.menu > li > a.active {
+.menu > li > a.active:hover{
     border-bottom: 4px solid #ee252d;
     position: relative;
-    
 }
-.menu > li > a.active::before {
+.menu > li > a.active:hover::before{
     content: '';
     position: absolute;
     left: 0;
