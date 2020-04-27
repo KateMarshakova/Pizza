@@ -369,10 +369,10 @@ label {
     .menu > li > a{
         padding-bottom: 15px;
     }
-    .menu > li > a.active {
+    .menu > li > a.active:hover {
         border-bottom: none;
     }
-    .menu > li > a.active::before{
+    .menu > li > a.active:hover::before{
         display: none;
     }
     .box {
